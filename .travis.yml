@@ -2,8 +2,8 @@
 language: cpp
 # Ubuntu 14.04 Trusty support
 
-sudo: required
-dist: trusty
+#sudo: required
+#dist: trusty
 # Compiler selection
 before_install:
   - sudo apt-get install xorg-dev libglu1-mesa-dev
