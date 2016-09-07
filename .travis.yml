@@ -6,7 +6,8 @@ sudo: required
 dist: trusty
 # Compiler selection
 before_install:
-  - sudo apt-get install xorg-dev libglu1-mesa-dev
+#  - sudo apt-get install xorg-dev libglu1-mesa-dev
+   - sudo apt-get install libxrandr-dev
 compiler:
   - clang
 # Build steps
