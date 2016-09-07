@@ -8,7 +8,7 @@ dist: trusty
 before_install:
   - sudo apt-get install xorg-dev libglu1-mesa-dev
 compiler:
-  - clang
+  - gcc
 # Build steps
 script:
   - mkdir build && cd build && mkdir Debug && cd Debug
