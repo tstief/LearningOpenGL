@@ -1,5 +1,3 @@
-add_library(glew SHARED glew.c)
-#add_definitions(-DGLEW_NO_GLU)
-#add_definitions(-DGLEW_BUILD)
-#set (CMAKE_SHARED_LINKER_FLAGS "-nostdlib")
-target_link_libraries(glew ${OPENGL_gl_LIBRARY})
+add_library(glew STATIC glew.c)
+
+#target_link_libraries(glew ${OPENGL_gl_LIBRARY})
