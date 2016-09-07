@@ -1,20 +1,24 @@
 # Enable C++ support
 language: cpp
-# Ubuntu 14.04 Trusty support
 
-#sudo: required
-#dist: trusty
-# Compiler selection
+# Ubuntu 14.04 Trusty support
+sudo: required
+dist: trusty
+
 before_install:
   - sudo apt-get install xorg-dev libglu1-mesa-dev
+  
+# Compiler selection
 compiler:
   - gcc
+  
 # Build steps
 script:
   - mkdir build && cd build && mkdir Debug && cd Debug
   - cmake -DCMAKE_BUILD_TYPE="Debug" ../.. && make
   - cd .. && mkdir Release && cd Release
   - cmake -DCMAKE_BUILD_TYPE="Release" ../.. && make
+  
 notifications:
   email:
     recipients:
